@@ -1,3 +1,3 @@
 ## server
 
-server link : https://github.com/mir-hussain/moon-tech-server
+``This is a e-commerce related web site ``
