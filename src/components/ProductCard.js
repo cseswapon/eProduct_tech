@@ -9,9 +9,9 @@ const ProductCard = ({ product }) => {
   const { pathname } = useLocation();
   return (
     <div
-      className="shadow-lg rounded-3xl border  p-3 flex flex-col text-indigo-900"
-      key={product._id}
+      className="shadow-lg rounded-3xl border relative p-3 flex flex-col text-indigo-900"
     >
+      {product.quantity && <span className="absolute right-3 bg-red-500 p-2 rounded-lg text-white">{product.quantity}</span>}
       <div className="h-52 w-52 mx-auto">
         <img src={product.image} alt={product.model} />
       </div>
